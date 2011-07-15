@@ -12,11 +12,6 @@ public class md5 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Process arguments to get file name
-		// TODO Read file from disk
-		// TODO Calculate MD5 using commons
-		// TODO Output MD5
-		
 		String filename = args[0];
 		String output = md5(filename);
 		System.out.println("MD5 Hash: " + output);
