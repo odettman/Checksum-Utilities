@@ -21,8 +21,6 @@ public class md5 {
 		String output = md5(filename);
 		System.out.println("MD5 Hash: " + output);
 
-
-
 	}
 	public static String md5(String fileName) {
 		FileInputStream subjectFile = null;
