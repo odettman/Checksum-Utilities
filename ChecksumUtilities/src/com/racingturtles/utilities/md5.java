@@ -6,10 +6,16 @@ import java.io.IOException;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
+
+/**
+ * Creates an md5 hash of the file referenced on the command line
+ * @author Oliver Dettman
+ *
+ */
 public class md5 {
 
 	/**
-	 * @param args
+	 * @param args The file for which you want to produce the md5 checksum
 	 */
 	public static void main(String[] args) {
 		if (args.length != 1) {
@@ -18,11 +24,16 @@ public class md5 {
 		}
 
 		String filename = args[0];
-		String output = md5(filename);
+		String output = generateMd5(filename);
 		System.out.println("MD5 Hash: " + output);
 
 	}
-	public static String md5(String fileName) {
+	
+	/**
+	 * @param fileName the filename that will be hashed
+	 * @return the md5 hash string for the specified file
+	 */
+	private static String generateMd5(String fileName) {
 		FileInputStream subjectFile = null;
 		String md5Hash = "Not Calculated";
 
