@@ -1,4 +1,4 @@
-package com.racingturtles.utilities.test;
+package com.racingturtles.utilities;
 
 import static org.junit.Assert.assertTrue;
 
@@ -12,7 +12,6 @@ public class Sha1Test {
 	public void testGenerateMd5() {
 		String sha1_testfile = "8835a0e2cc97440e3a366ef0c18e32a844604377";
 		assertTrue(Sha1.generateSha1("testfile.txt").equals(sha1_testfile));
-		//fail("Not yet implemented");
 	}
 
 }
